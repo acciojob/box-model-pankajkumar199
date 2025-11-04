@@ -1,7 +1,4 @@
-/* Global box-sizing to make layout calculations 
-  more intuitive. 'border-box' includes padding 
-  and border in the element's total width and height.
-*/
+/* Global box-sizing */
 * {
     box-sizing: border-box;
 }
@@ -16,55 +13,28 @@ body {
     margin: 0;
 }
 
-/* Styles for the main container 
-*/
+/* Styles for the main container */
 .container {
-    /* Specific width */
     width: 400px;
-    
-    /* Centering the container on the page */
     margin: 20px auto;
-    
-    /* Space inside the container */
     padding: 20px;
-    
-    /* A visible border */
     border: 3px solid #333;
-    
-    /* Rounded corners for the container */
     border-radius: 10px;
-    
-    /* Light background to see the container */
     background-color: #ffffff;
-    
-    /* This centers the inline-block elements (the circles) */
     text-align: center;
 }
 
-/* Common styles for all three colored blocks 
-*/
+/* Common styles for all three blocks */
 .red, .green, .yellow {
-    /* Specific size */
     width: 100px;
     height: 100px;
-    
-    /* 'inline-block' allows the elements to flow horizontally 
-      (like inline) but still respects width, height, and margin 
-      (like block).
-    */
     display: inline-block;
-    
-    /* Space around each circle */
     margin: 10px;
-    
-    /* border-radius: 50% is the key to making 
-      a square element appear as a perfect circle.
-    */
     border-radius: 50%;
 }
 
-/* Specific background colors for each block 
-   These simple color names match what your test is expecting.
+/* Specific colors the test is looking for.
+  'red' = rgb(255, 0, 0)
 */
 .red {
     background-color: red;
