@@ -64,15 +64,16 @@ body {
 }
 
 /* Specific background colors for each block 
+   These simple color names match what your test is expecting.
 */
 .red {
-    background-color: #e74c3c; /* A nicer red */
+    background-color: red;
 }
 
 .green {
-    background-color: #2ecc71; /* A nicer green */
+    background-color: green;
 }
 
 .yellow {
-    background-color: #f1c40f; /* A nicer yellow */
+    background-color: yellow;
 }
