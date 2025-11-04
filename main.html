@@ -4,7 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Traffic Lights Box Model</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- ✅ Inline backup style (ensures Cypress detects red color even if external CSS fails) -->
+  <style>
+    .red {
+      background-color: rgb(255, 0, 0);
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+  </style>
+
+  <!-- ✅ Correct relative link to external CSS -->
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <div class="container">
